@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>מינוי אבירים</title>
+</head>
+ <style>
+        body {
+            background: linear-gradient(to bottom right, #5fb5d4, #d0f0c0);
+            font-family: 'David', sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: rgb(12, 18, 93);
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #336cbc;
+            margin-bottom: 40px;
+        }
+
+        p{
+            font-size: 40px;
+            color: #107884;
+            margin-bottom: 40px;    
+        }
+
+
+        label {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            width: 300px;
+            font-size: 18px;
+            border: 2px solid #fcfcfc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            
+            color: #517e8f;
+            font-size: 20px;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+    
+
+    </style>
+
+<body>
+    <h1>🛡️ מִנּוּי אַבִּיר 🛡️</h1>
+    <p>
+        כאן ניתן להציע אבירות חדשות! 
+         <br/>
+          יש לצרף מספר נימוקים בנוגע להתאמתה של כל מועמדת
+        <br/>
+        <br/>
+        <br/>
+        סיכויי קבלה לעומדים בדרישות התפקיד : נמוך 
+
+    </p>
+    <form method="post">
+        <label for="addNight">?מי ראוייה לאבירות</label>
+        <input type="text" id="addNight" name="addNight" required>
+        <button type="submit">שלחי</button>
+    </form>
+
+   
+<!-- ההצעות שנשמרו -->
+    <h2>📜 ההצעות :</h2>
+    <ul>
+    {% for item in suggestions %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+
+<br>
+<a href="/">⬅ חזרה לממלכה</a>
+    
+</body>
+</html>
+
