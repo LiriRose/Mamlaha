@@ -28,5 +28,10 @@ def question():
 @app.route('/questions')# צפייה בהצעות
 def show_questions():
     return render_template('questions.html', suggestions=suggestions)
+
+import os
+
 if __name__ == '__main__':
-    app.run(debug=True)  # מריץ את האתר
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
+
