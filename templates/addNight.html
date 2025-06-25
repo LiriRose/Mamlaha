@@ -61,17 +61,25 @@
     <h1>🛡️ מִנּוּי אַבִּיר 🛡️</h1>
     <p>
         כאן ניתן להציע אבירות חדשות! 
+        <br/>
+        <br/>
+         
+        יש להציע אביר אחרי בחינה מעמיקה של התאמתו
+        <br/>
          <br/>
-          יש לצרף מספר נימוקים בנוגע להתאמתה של כל מועמדת
-        <br/>
-        <br/>
         <br/>
         סיכויי קבלה לעומדים בדרישות התפקיד : נמוך 
 
     </p>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <label for="addNight">?מי ראוייה לאבירות</label>
-        <input type="text" id="addNight" name="addNight" required>
+        <input type="text" id="addNight" name="addNight"
+         placeholder="שם מלא של המועמדת" required>
+       
+
+        <label>תמונת האביר:</label>
+        <input type="file" id="imageKnight" name="imageKnight">
+
         <button type="submit">שלחי</button>
     </form>
 
