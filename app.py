@@ -31,6 +31,10 @@ def show_questions():
 
 import os
 
+@app.route('/weather')
+def weather():
+    return render_template('weather.html')
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
     app.run(host='0.0.0.0', port=port)
