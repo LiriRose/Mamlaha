@@ -31,7 +31,7 @@ def show_questions():
 
 import os
 
-@app.route('/weather')
+@app.route('#weather')
 def weather():
     return render_template('weather.html')
 
