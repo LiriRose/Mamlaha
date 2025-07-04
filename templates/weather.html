@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="he">
-
-
 <head>
-    <meta charset="UTF-8">
-    <title>מזג אוויר</title>
+  <meta charset="UTF-8">
+  <title>מזג אוויר</title>
 </head>
+<body>
 
-<Body>
+  <h1>מֶזֶג הָאֲוִיר בַּמַּמְלָכָה</h1>
 
-<h1> 
-    
-    מֶזֶג הָאֲוִיר בַּמַּמְלָכָה 
+  <a class="weatherwidget-io"
+     href="https://forecast7.com/en/55d86n4d25/glasgow/"
+     data-label_1="גלזגו"
+     data-label_2="סקוטלנד"
+     data-theme="original">
+     
+     גלזגו סקוטלנד
+  </a>
 
-</h1>
+  <script src="https://weatherwidget.io/js/widget.min.js"></script>
 
-
-<a class="weatherwidget-io" href="https://forecast7.com/en/55d86n4d25/glasgow/" data-label_1="גלזגו" data-label_2="סקוטלנד" data-theme="original">גלזגו סקוטלנד</a>
-<script>
-!function(d,s,id){
-  var js,fjs=d.getElementsByTagName(s)[0];
-  if(!d.getElementById(id)){
-    js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
-    fjs.parentNode.insertBefore(js,fjs);
-  }
-}(document,'script','weatherwidget-io-js');
-</script>
-
-
-
-</Body>
+</body>
 </html>
